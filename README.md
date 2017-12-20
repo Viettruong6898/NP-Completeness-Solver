@@ -1,4 +1,4 @@
-# Simulated Annealing
+# NP-Completeness Solver
 
 This project was used to solve NP-completeness problems. For example, consider the following problem:
 
@@ -6,7 +6,7 @@ This project was used to solve NP-completeness problems. For example, consider t
 their age. From conversations at the party, you are only given information in the following form: some
 wizard’s age is not betIen the ages of two other wizards. Since wizard parties are also notoriously long
 (an entire month!), you decide to use your time at the party to write a solver and figure out the true ordering
-of wizards by their ages"
+of wizards by their ages. All the input files passed in are as followed. Line (1) # of wizards Line (2) # of constraints Line(3~) List of constraints. Write an output file that satisfies all the constraints and return the optimal ordering"
 
 As you can see if the number of wizards go up to 500 or more and you are given 500 constraints or more, there are an exponential amount of possibilities. This is why this problem is in NP-complete. Therefore, I will solve this problem by randomly generating combinations and update the best state possible until all constraints are satisfied. I can solve these input files in seconds because I optimized it by moving one wizard around at a time and see which constraints are broken.
 
